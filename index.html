@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicon</title>
+    <!-- Bootstrap CSS -->
+    <link rel="short icon" href="./assests/icons8-naruto-48.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 70px; /* Adjusted padding for navbar */
+        }
+        .jumbotron {
+            background-color: #9061ff;
+            color: white;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .navbar {
+            background-color: #6179ff;
+        }
+        .card {
+            border: 2px solid #4caf50;
+            margin-bottom: 1.5rem;
+        }
+        .card-title {
+            text-align: center;
+            color: #4caf50;
+        }
+        .carousel-item img {
+            margin: auto;
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #150101;
+        }
+        .list-group-item {
+            background-color: #3bcbff;
+            color: #333333;
+        }
+        .container h2 {
+            color: #d23411;
+            margin-top: 2rem;
+        }
+        .carousel-indicators li {
+            background-color: #61b3ff;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(100%);
+        }
+        .footer {
+            background-color:aqua;
+            color: rgb(21, 19, 19);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .footer .social-icons a {
+            color: rgb(22, 21, 21);
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .footer .social-icons a:hover {
+            color: #111211;
+        }
+    </style>
+</head>
+<body style="background-color:aqua">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <img src="./assests/icons8-headphones-64-removebg-preview.png" alt="" width="50">
+        <a class="navbar-brand" href="#"><h2><i class="fa fa-globe"></i>&nbsp;Musicon</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Genres</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Artists</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Albums</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container col-xl-10 px-10 py-20">
+      <div class="row flex-lg-row-reverse align-items-center g-5  py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="./assests/global-world-music-logo-design-earth-with-headphones-design-free-vector-removebg-preview.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="1000" height="300" loading='lazy'>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Discover the World of Music</h1>
+          <p class="lead">Discover, listen, and enjoy music from all around the world.</p>
+        <p>Immerse yourself in a world of melodies, rhythms, and harmonies. At Musicon, we celebrate music from every corner of the globe, bringing you a diverse collection of genres and languages. Whether you're a fan of the soulful beats of jazz, the energetic vibes of rock, or the soothing tunes of classical music, there's something for everyone.</p>
+        <p>Our curated playlists are designed to match every mood and moment. Explore our extensive library, find your new favorite artists, and experience the universal language of music like never before. From the latest chart-toppers to timeless classics, Musicon is your ultimate destination for musical discovery and enjoyment.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          </div>
+        </div>
+      </div>
+    <div class="container">
+        <h2 class="text-center mb-4"><b>Explore UR Tune</b></h2>
+        <div id="genreCarousel" class="carousel slide mb-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#genreCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#genreCarousel" data-slide-to="1"></li>
+                <li data-target="#genreCarousel" data-slide-to="2"></li>
+                <li data-target="#genreCarousel" data-slide-to="3"></li>
+                <li data-target="#genreCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/rock.webp" class="card-img-top" alt="Rock Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/6L1bPaFgz4btGySGnmVfdp?si=389b41a4732f4238">Rock</a></h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Manasa Manasa - Haricharan</li>
+                                        <li class="list-group-item">Padipoya - Karthik</li>
+                                        <li class="list-group-item">Chiguraku Chatu - Karthik</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/pop.webp" class="card-img-top" alt="Pop Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/7BjoMfeIcXVX3VZVmfyFkq?si=641b89807d5540c7">Pop</a></h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Butta Bomma - Armaan Malik</li>
+                                        <li class="list-group-item">Samajavaragamana - Sid Sriram</li>
+                                        <li class="list-group-item">Seeti Maar - Jaspreet Jasz, Rita</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/jazz.webp" class="card-img-top" alt="Jazz Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/0iJsqsUoE9RHeTzJWWynpj?si=7fd8a79a707244b8">Jazz</a></h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Manasa - Haricharan</li>
+                                        <li class="list-group-item">Kallu Moosi - Hariharan</li>
+                                        <li class="list-group-item">Arare Arare - Hariharan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="assests/class.webp" class="card-img-top" alt="Classical Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/3k2wpX2Nh7tVtUP2d5HtJR?si=6cb0952c3f4d42ff">Classical</a></h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Raghuvamsha Sudha - S. Janaki </li>
+                                        <li class="list-group-item">Oka Madhurakinara - S. P. B</li>
+                                        <li class="list-group-item">Shankara Nadasharira - Ghantasala</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/hip.webp" class="card-img-top" alt="Hip-Hop Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/1VgsFw9qq2beHbDRe36ERJ?si=61a836cce3a34196">Hip-Hop</a></h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Pilla Raa - Anurag Kulkarni </li>
+                                        <li class="list-group-item">Hey Pilla - Roll Rida</li>
+                                        <li class="list-group-item">Naatu Naatu - Rahul Sipligunj</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/country.webp" class="card-img-top" alt="Country Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/3VVtXBWDiFi9JTjmv9W01L?si=fab4d773e9c144b0">Country</a></h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Vachinde - Madhu Priya</li>
+                                        <li class="list-group-item">Saami Saami - Mounika Yadav</li>
+                                        <li class="list-group-item">Rangasthalam - Rahul Sipligunj</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional carousel items can be added here -->
+            </div>
+            <a class="carousel-control-prev" href="#genreCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#genreCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h2 class="text-center mb-4"><b>Languages</b></h2>
+        <div id="languageCarousel" class="carousel slide mb-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#languageCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#languageCarousel" data-slide-to="1"></li>
+                <li data-target="#languageCarousel" data-slide-to="2"></li>
+                <li data-target="#languageCarousel" data-slide-to="3"></li>
+                <li data-target="#languageCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/Tollywood.webp" class="card-img-top" alt="English Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/6h0z7LpjfVASw5oXZmMdek?si=365839406e494ec2">Tollywood</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/Bollywood.webp" class="card-img-top" alt="Spanish Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/0udjmvwKO4SQcXzVL9Kv1m?si=50e52e0e11984ee2">Bollywood</a></h5>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/Hollywood.webp" class="card-img-top" alt="French Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/44j7hYaG0v6DEh9egqVWzw?si=74d896195e3f4e66">Hollywood</a></h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/kannada.webp" class="card-img-top" alt="German Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/6ppm1rd8zW1FfkWkLOJd80?si=2073f41acd2f4fd4">Kannada</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/Malayalam.webp" class="card-img-top" alt="Italian Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/37i9dQZF1DWTYKFynxp6Fs?si=47924bd0570048e4">Malayalam</a></h5>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="./assests/bengaali.webp" class="card-img-top" alt="Japanese Music">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="https://open.spotify.com/playlist/5Z4JxUCcEl2hqSacZnAQhI?si=eef1f9b3c9ce4cd7">Bengaali</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional carousel items can be added here -->
+            </div>
+            <a class="carousel-control-prev" href="#languageCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#languageCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="bg-dark text-secondary px-28 py-30 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Explore the Tune</h1>
+        <div class="col-lg-6 mx-auto">
+          <p>Join our community of music lovers and let the music take you on an unforgettable journey. Listen, enjoy, and feel the magic with Musicon.</p>
+          <p class="lead">Music's profound impact lies in its ability to evoke emotions, bridge cultural divides, and enhance cognitive development. It transcends language, offering solace, joy, and a platform for creativity, ultimately enriching our lives with deeper meaning and connection.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+          <p>&copy; 2024 Musicon. All rights reserved.</p>
+          <p>Immerse yourself in the beauty of music with Musicon. Discover, listen, and enjoy the best tunes from around the world.</p>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"><img src="./assests/icons8-facebook-30.png" alt=""></i></a>
+              <a href="#"><i class="fab fa-twitter"><img src="./assests/icons8-twitter-30.png" alt=""></i></a>
+              <a href="#"><i class="fab fa-instagram"><img src="./assests/icons8-instagram-30.png" alt=""></i></a>
+          </div>
+          <p>Contact us: <a href="mailto:support@musicon.com" class="text-black">support@musicon.com</a></p>
+      </div>
+  </footer>
+  
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
